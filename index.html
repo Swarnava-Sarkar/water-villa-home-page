@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+	<title>Water-Villa | Welcome to Maldives </title>
+</head>
+<body>
+	<section>
+
+		<header>
+			<a href="#" class="logo">Water | Villa</a>
+			<div class="toggle" onclick="menuToggle();"></div>			
+		</header>
+
+		<div class="glass"></div>
+
+		<video src="./water.mp4" autoplay muted loop></video>
+
+		<div class="content">			
+			<h2>
+				An Ocean Breeze....
+				<br>
+				<span>
+					Puts  a  Mind at Ease
+				</span>
+			</h2>			
+		</div>
+
+		<ul class="sco">
+			<li style="--i:1"><a href="#">FaceBook</a></li>
+			<li style="--i:2"><a href="#">Instagram</a></li>
+			<li style="--i:3"><a href="#">Twitter</a></li>
+		</ul>
+
+		<ul class="nav">
+			<li style="--i:1;"><a href="#">Home</a></li>
+			<li style="--i:2;"><a href="#">About</a></li>
+			<li style="--i:3;"><a href="#">Book Now</a></li>
+			<li style="--i:4;"><a href="#">Contact Us</a></li>
+		</ul>
+
+	</section>
+
+	<script type="text/javascript">
+		
+		function menuToggle(){
+			const toggleMenu = document.querySelector('.toggle');
+			const section = document.querySelector('section');
+			toggleMenu.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+
+	</script>
+
+</body>
+</html>
